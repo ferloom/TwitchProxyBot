@@ -1,7 +1,7 @@
 # Buduje TwitchProxyBot.exe kompilatorem wbudowanym w Windows (.NET Framework 4.8).
 param([string]$out = (Join-Path $PSScriptRoot 'TwitchProxyBot.exe'))
 $ErrorActionPreference = 'Stop'
-$src = Join-Path $PSScriptRoot 'src'
+$src = $PSScriptRoot
 $fx  = 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319'
 
 $wpf = "$fx\WPF"
